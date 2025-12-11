@@ -1,0 +1,75 @@
+.discover-wrapper {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  background: #fffdf6;
+}
+
+.discover-container {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.discover-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.15);
+}
+
+.discover-content {
+  flex: 1;
+}
+
+.discover-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #d62828; /* restaurant theme */
+}
+
+.discover-text {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.discover-btn {
+  padding: 12px 26px;
+  background: #d62828;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.discover-btn:hover {
+  background: #b71c1c;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .discover-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .discover-image img {
+    max-width: 100%;
+  }
+
+  .discover-title {
+    font-size: 28px;
+  }
+  .discover-text{
+    text-decoration: none;
+    align-items: center;
+    text-align: start;
+  }
+}
