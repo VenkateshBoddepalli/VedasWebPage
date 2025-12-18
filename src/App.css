@@ -15,8 +15,10 @@ img {
   margin: 0rem auto;
 }
 body {
+  margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 
 body {
@@ -118,8 +120,11 @@ nav {
 .secondary-button:hover {
   background-color: #e48f0f;
 }
+
+/* About component styles */
+
 .about-section-container {
-  margin-top: 20rem;
+  margin-top: 60px;
   position: relative;
   display: flex;
   align-items: center;

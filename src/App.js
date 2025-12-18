@@ -1,4 +1,5 @@
 import "./App.css";
+import {Routes, Route} from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Work from "./Components/Work";
@@ -10,9 +11,8 @@ import ExploreMenu from "./Components/ExploreMenu";
 import WatchVideo from "./Components/WatchVideo";
 import NotFound from "./Components/NotFound";
 import DiscoverStory from "./Components/DiscoverStory"
-
-
-import {Routes, Route} from "react-router-dom";
+import OrderNow from "./Components/OrderNow";
+import CheckOut from "./Components/CheckOut";
 
 function App() {
   return (
@@ -25,12 +25,14 @@ function App() {
 
      <Route path="/testimonial" element={<Testimonial />}/>
      <Route path="/icon" element={<Work />}/>
+     <Route path="/ordernow" element={ <OrderNow />}/>
      <Route path="/footer" element={<Footer />}/>
 
 
      <Route path="/discoverStory" element={ <DiscoverStory />}/>
      <Route path="/watchVideo" element={ <WatchVideo />}/>
      <Route path="/exploreMenu" element={ <ExploreMenu />}/>
+     <Route path="/checkout" element={ <CheckOut />}/>
      <Route path="*" element={ <NotFound />}/>
      </Routes>
     </div>

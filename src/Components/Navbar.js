@@ -33,7 +33,7 @@ const Navbar = () => {
     { text: "Testimonial",icon: <CommentRoundedIcon />,path: "/testimonial"},
     { text: "Contact", icon: <PhoneRoundedIcon />, path: "/contact" },
     { text: "Cart", icon: <ShoppingCartRoundedIcon />, path: "/icon" },
-    { text: "Order Now",icon: <FastfoodRoundedIcon  />,path: "/icon"},
+    { text: "Order Now",icon: <FastfoodRoundedIcon  />,path: "/ordernow"},
   ];
 
   return (
@@ -58,7 +58,7 @@ const Navbar = () => {
         </NavLink>
 
         {/* <button className="primary-button" onClick={() => navigate("/icon")}>Order Now</button> */}
-        <button className="order-now-btn" onClick={() => navigate("/icon")}>
+        <button className="order-now-btn" onClick={() => navigate("/ordernow")}>
           🍽️ Order Now
         </button>
       </nav>
