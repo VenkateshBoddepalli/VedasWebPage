@@ -24,7 +24,7 @@ const Work = () => {
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Work</p>
+        {/* <p className="primary-subheading">Work</p> */}
         <h1 className="primary-heading">How It Works</h1>
         <p className="primary-text" style={{textAlign:"start"}}>
           Pick your favourite dishes from our menu.

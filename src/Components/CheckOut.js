@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./CheckOut.css";
 
@@ -12,6 +12,7 @@ const CheckOut = ({ cart: propCart = {} }) => {
 
   const [address, setAddress] = useState("home");
   const [payment, setPayment] = useState("upi");
+  const [total, setTotal] = useState(0);
 
   //  SAFE total calculation
   const totalPrice = Object.values(cart).reduce(
@@ -20,6 +21,14 @@ const CheckOut = ({ cart: propCart = {} }) => {
   );
 
   const hasItems = Object.values(cart).some((i) => i?.qty > 0);
+
+useEffect(() => {
+  const storedTotal = localStorage.getItem("orderTotal");
+
+  if(storedTotal){
+    setTotal(Number(storedTotal));
+  }
+},[]);
 
   return (
     <div className="checkout-container">
@@ -96,7 +105,8 @@ const CheckOut = ({ cart: propCart = {} }) => {
             <hr />
             <div className="summary-total">
               <strong>Total</strong>
-              <strong>₹{totalPrice}</strong>
+              {/* <strong>₹{totalPrice}</strong> */}
+              <strong>₹{total}</strong>
             </div>
           </div>
 
