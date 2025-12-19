@@ -13,6 +13,7 @@ import NotFound from "./Components/NotFound";
 import DiscoverStory from "./Components/DiscoverStory"
 import OrderNow from "./Components/OrderNow";
 import CheckOut from "./Components/CheckOut";
+import MessCard from "./Components/MessCard";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
      <Route path="/watchVideo" element={ <WatchVideo />}/>
      <Route path="/exploreMenu" element={ <ExploreMenu />}/>
      <Route path="/checkout" element={ <CheckOut />}/>
+     <Route path="/messcard" element={ <MessCard />}/>
      <Route path="*" element={ <NotFound />}/>
      </Routes>
     </div>

@@ -20,6 +20,7 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import FastfoodRoundedIcon from "@mui/icons-material/FastfoodRounded";
+import PaymentRoundedIcon from "@mui/icons-material/PaymentRounded";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -34,6 +35,7 @@ const Navbar = () => {
     { text: "Contact", icon: <PhoneRoundedIcon />, path: "/contact" },
     { text: "Cart", icon: <ShoppingCartRoundedIcon />, path: "/icon" },
     { text: "Order Now",icon: <FastfoodRoundedIcon  />,path: "/ordernow"},
+    { text: "Mess Card", icon:<PaymentRoundedIcon />,path:"/messcard"},
   ];
 
   return (
@@ -56,6 +58,7 @@ const Navbar = () => {
         <NavLink to="/icon">
           <BsCart2 className="navbar-cart-icon" />
         </NavLink>
+        <NavLink to="/messcard">Mess Card</NavLink>
 
         {/* <button className="primary-button" onClick={() => navigate("/icon")}>Order Now</button> */}
         <button className="order-now-btn" onClick={() => navigate("/ordernow")}>
