@@ -1,0 +1,17 @@
+<form action="http://localhost:3000/api/successOrder" method="GET">
+<script
+    src="https://checkout.razorpay.com/v1/checkout.js"
+    data-key="<%- key %>" 
+    data-amount="<%- order.amount/100 %>"
+    data-currency="INR"
+    data-order_id="<%- order.id %>"
+    data-buttontext="Sample Payment"
+    data-name="VM Training"
+    data-description="Sample Payment testing"
+    data-image="https://vmtraining.netlify.app/images/logo.png"
+    data-prefill.name="Venkatesh Boddepalli"
+    data-prefill.email="venkateshboddepalli1999@gmail.com"
+    data-theme.color="#F37254"
+></script>
+<input type="hidden" custom="Hidden Element" name="hidden">
+</form>

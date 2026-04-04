@@ -1,0 +1,104 @@
+/* styles/messCard.css */
+/* 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+} */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mess-card {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Main Card */
+.main-card {
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.main-card:hover {
+  transform: scale(1.02);
+}
+
+.main-card h2 {
+  color: white;
+  margin: 0;
+}
+
+.main-card p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Plan Card */
+.plan-card {
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 15px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-title {
+  color: white;
+  font-size: 16px;
+}
+
+.plan-desc {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.price {
+  color: #c084fc;
+  font-weight: bold;
+}
+
+/* Button */
+.pay-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #a855f7, #ec4899);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .main-card h2 {
+    font-size: 18px;
+  }
+}
