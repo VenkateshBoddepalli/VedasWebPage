@@ -105,7 +105,7 @@ useEffect(() => {
             <hr />
             <div className="summary-total">
               <strong>Total</strong>
-              {/* <strong>₹{totalPrice}</strong> */}
+              <strong>₹{totalPrice}</strong>
               <strong>₹{total}</strong>
             </div>
           </div>
