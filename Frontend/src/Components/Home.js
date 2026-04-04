@@ -32,7 +32,7 @@ const navigateToExploreMenu = () => {
            Healthy kitchen chefs do all the prep — peeling, chopping & seasoning — so you enjoy food that feels like home.
           </p>
           <button className="secondary-button" onClick={navigateToExploreMenu}>
-            Explore Menu <FiArrowRight />{" "}
+            Menu Explore <FiArrowRight />{" "}
           </button>
         </div>
         <div className="home-image-section">
