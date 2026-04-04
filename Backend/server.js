@@ -25,7 +25,7 @@ const port = 3000;  // server runs on localhost:3000
 
 
 // Middleware setup
-app.use(cors({origin: '*'}));  // Allows requests from any origin (frontend apps)
+app.use(cors({origin:'vedas-web-page-sdrl.vercel.app'}));  // Allows requests from any origin (frontend apps)
 // Handles large request data (like images, big JSON)
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
