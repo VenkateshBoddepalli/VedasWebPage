@@ -82,6 +82,7 @@ nav {
   width: 50%;
   max-width: 600px;
   z-index: -1;
+  pointer-events: none;
 }
 .home-image-section img {
   width: 100%;
@@ -89,12 +90,14 @@ nav {
   height: auto;
 }
 .home-text-section {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   max-width: 500px;
+  z-index: 2;
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);

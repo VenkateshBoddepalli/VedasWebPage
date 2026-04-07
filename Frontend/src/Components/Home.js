@@ -28,12 +28,12 @@ const navigateToExploreMenu = () => {
           <h1 className="primary-heading">
             Fresh Flavours, Cooked with Love, Delivered Fast
           </h1>
-          <p className="primary-text">
-           Healthy kitchen chefs do all the prep — peeling, chopping & seasoning — so you enjoy food that feels like home.
-          </p>
           <button className="secondary-button" onClick={navigateToExploreMenu}>
             Menu Explore <FiArrowRight />{" "}
           </button>
+          <p className="primary-text">
+           Healthy kitchen chefs do all the prep — peeling, chopping & seasoning — so you enjoy food that feels like home.
+          </p>
         </div>
         <div className="home-image-section">
           <img src={BannerImage} alt="" />
