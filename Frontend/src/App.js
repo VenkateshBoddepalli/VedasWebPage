@@ -42,3 +42,15 @@ function App() {
 }
 
 export default App;
+
+// import React from "react";
+// import Text from "./text.js"
+
+// function App() {
+//   return(
+//     <>
+//       <Text />
+//     </>
+//   );
+// };
+// export default App;

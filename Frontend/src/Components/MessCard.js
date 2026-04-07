@@ -26,7 +26,7 @@ const MessCard = ({ open, onClose }) => {
   const handlePayment = async (amount, title) => {
     try {
       const { data } = await axios.post(
-        "https://vedaswebpageapi.onrender.com/api/payment/create-order",
+        "http://localhost:3000/api/payment/create-order",
         { amount }
       );
 
@@ -40,7 +40,7 @@ const MessCard = ({ open, onClose }) => {
 
         handler: async function (response) {
           const verifyRes = await axios.post(
-            "https://vedaswebpageapi.onrender.com/api/payment/verify-payment",
+            "http://localhost:3000/api/payment/verify-payment",
             response
           );
           alert(verifyRes.data.message);
