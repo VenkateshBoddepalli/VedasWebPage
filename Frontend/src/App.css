@@ -4,9 +4,9 @@
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
-/* * {
+* {
   outline: 1px solid rgb(0, 255, 34);
-} */
+}
 img {
   max-width: 100%;
   height: auto;
@@ -669,6 +669,7 @@ nav a.active {
   }
   .about-section-container {
     flex-direction: column;
+    height: auto;
   }
   .home-image-section,
   .about-section-image-container {
@@ -700,7 +701,7 @@ nav a.active {
     cursor: pointer;
   }
   .about-section-container {
-    margin-top: 0px !important;
+    margin-top: -250px !important;
   }
   .about-buttons-container {
     justify-content: center;
@@ -709,6 +710,7 @@ nav a.active {
   .primary-subheading {
     text-align: center;
     font-size: 22px;
+    margin-top: 0px;
   }
   .watch-video-button {
     margin-left: 0rem !important;
@@ -721,6 +723,10 @@ nav a.active {
   .about-section-image-container {
     margin-right: 0rem !important;
   }
+  .testimonial-wrapper {
+  text-align: center;
+  margin-top: -40px;
+}
   .work-section-wrapper {
     margin-top: 0px !important;
   }
@@ -753,6 +759,9 @@ nav a.active {
     margin-bottom: 0.8rem !important;
     text-align: center;
   }
+  .contact-container {
+   margin-top: -40px;
+}
   .footer-wrapper {
     flex-direction: column;
   }
@@ -787,22 +796,10 @@ nav a.active {
   }
 
   .about-section-image-container {
-    /* margin: 0; */
     margin-top: 270px;
-  }
-
-  .about-background-image-container {
-    display: none;
   }
 
   .testimonial-card {
     width: 102px;
-  }
-}
-
-@media (max-width: 600px) {
-  .home-bannerImage-container,
-  .about-background-image-container {
-    display: none;
   }
 }

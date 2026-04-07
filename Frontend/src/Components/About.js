@@ -23,11 +23,7 @@ const About = () => {
         <p className="primary-text">
           Because great taste should never come at the cost of your wellbeing.
         </p>
-        <p className="primary-text">
-          మనం చేసే ప్రతి వంటకం ఇంటి రుచితో, స్వచ్ఛమైన పదార్థాలతో సిద్ధమవుతుంది.
-          రుచికరమై, ఆరోగ్యకరమై ఉండే ఆహారమే మా లక్ష్యం.
-        </p>
-        <div className="about-buttons-container">
+         <div className="about-buttons-container">
           <button
             className="discover-btn"
             onClick={() => navigate("/discoverStory")}
@@ -42,6 +38,10 @@ const About = () => {
             <BsFillPlayCircleFill /> Watch Video
           </button>
         </div>
+        <p className="primary-text">
+          మనం చేసే ప్రతి వంటకం ఇంటి రుచితో, స్వచ్ఛమైన పదార్థాలతో సిద్ధమవుతుంది.
+          రుచికరమై, ఆరోగ్యకరమై ఉండే ఆహారమే మా లక్ష్యం.
+        </p>
       </div>
     </div>
   );
